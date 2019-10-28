@@ -23,7 +23,7 @@ pipeline {
         }
         stage('Sexta Breja') {
             steps {
-                echo 'Finalizacao da sexta, agora so segundona....'
+                echo 'Iniciando a segundona, treinamento jenkins....'
             }
         }
     }
