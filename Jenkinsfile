@@ -1,10 +1,17 @@
 #!groovy
-import Jenkins.*
+
 
 pipeline {
     agent any
 
     stages {
+        stage 'Checkout'
+           node {
+                deleteDir()
+                checkout scm
+            }
+    
+
         stage('Build') {
             steps {
                 script { 
