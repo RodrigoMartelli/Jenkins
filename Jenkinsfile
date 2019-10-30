@@ -1,4 +1,4 @@
-import Jenkins.*
+
 
 stage 'Checkout'
     node {
@@ -9,7 +9,7 @@ stage 'Checkout'
 stage 'Build'
     node {
         script {
-           
+            import Jenkins.*
             def pessoa = new Pessoa(nome:"Henrique")
             def animal = new Cachorro(nome:"Cão")
             animal.closure = pessoa.apresenteSe
