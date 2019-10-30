@@ -1,3 +1,5 @@
+import Jenkins.*
+
 stage 'Checkout'
     node {
         deleteDir()
@@ -7,6 +9,7 @@ stage 'Checkout'
 stage 'Build'
     node {
         script {
+           
             def pessoa = new Pessoa(nome:"Henrique")
             def animal = new Cachorro(nome:"Cão")
             animal.closure = pessoa.apresenteSe
