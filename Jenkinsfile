@@ -1,5 +1,5 @@
 #!groovy
-import hello
+import Jenkins.*
 
 pipeline {
     agent any
@@ -7,16 +7,17 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                script { 
                 echo 'Building..'
                 def pessoa = new Pessoa(nome:"Henrique")
-                def animal = new Animal(nome:"Cão")
+                def animal = new Cachorro(nome:"Cão")
                 animal.closure = pessoa.apresenteSe
                 println(pessoa.apresenteSe)
                 animal.fale() //imprimirá "Ola. Meu nome e Henrique"
                 pessoa.nome = "Angelica"
                 animal.fale() //imprimirá "Ola. Meu nome e Angelica"                
             }
-            
+            }
         }
         stage('Test') {
             steps {
