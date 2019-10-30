@@ -1,4 +1,4 @@
-@Library(Jenkins@master)
+@Library('Jenkins@master')
 import Jenkins.*
 
 stage 'Checkout'
