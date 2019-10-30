@@ -1,11 +1,13 @@
-@Library('Jenkins@master')
-import Jenkins.*
+//@Library('Jenkins@master')
+//import Jenkins.*
 
 stage 'Checkout'
     node {
         deleteDir()
         checkout scm
+        script{import Jenkins.*}
     }
+    
  
 stage 'Build'
     node {
