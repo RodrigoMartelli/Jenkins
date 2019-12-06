@@ -25,7 +25,7 @@ boolean b = false
 int timeout = 0
 //String teste
 
-teste = 'Testes srting mister beenn'
+teste = 'Testes srting mister beenn teste 2'
 
 println(teste)
 
