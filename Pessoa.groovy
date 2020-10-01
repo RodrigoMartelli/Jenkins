@@ -8,4 +8,5 @@ class Pessoa {
          }
 }
 
-Secrets: '***REMOVED***'
+//retirando senha aleatoria daqui
+
