@@ -7,3 +7,5 @@ class Pessoa {
          println "Ola. Meu nome a $nome e meu delegate ${delegate.nome}"
          }
 }
+
+Secrets: '***REMOVED***'
